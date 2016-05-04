@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+}
+.picture_wrapp {
+	background: #4EA3C2;
+	height:400px;
+	width: 800px; 
+	margin: 50px auto 0;
+	padding: 80px;
+}
+
+	.picture_wrapp > .smile {	
+		width: 300px;
+		height: 300px;
+		margin: auto;
+		padding: 50px 0 0 40px; 
+		box-sizing: border-box;
+
+		border: 2px solid #000;
+		border-radius: 100%;
+
+		background: #F15C24;
+		background: linear-gradient(to bottom, #FAE122, #FAD522, #F26225, #F15C24, #FBA639);
+		background: -webkit-linear-gradient(to bottom, #FAE122, #FAD522, #F15C24, #FBA639); 
+		background: -o-linear-gradient(to bottom, #FAE122, #FAD522, #F15C24, #FBA639); 
+		background: -moz-linear-gradient(to bottom, #FAE122, #FAD522, #F15C24, #FBA639); 
+
+		box-shadow: 24px 0px 34px 1px rgba(0,0,0,0.45);
+	}
+
+		.picture_wrapp > .smile > .eye {
+			background: #fff;
+			border-radius: 100%;
+			border: 2px solid #000;
+			display: inline-block;
+			vertical-align: middle;
+		}
+
+		.picture_wrapp > .smile .eye:nth-child(1) {
+			width: 90px;
+			height: 90px;
+			margin-right: -5px;
+			text-align: right;  
+		}
+
+		.picture_wrapp > .smile .eye + .eye {
+			width: 120px;
+			height: 120px;
+			text-align: left;
+		}
+
+			.picture_wrapp > .smile > .eye:after {
+				content: '';
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+
+				border-radius: 100%;
+
+				background: #000;
+				background: -webkit-radial-gradient(circle closest-side at 20px 20px, #959595, #000);
+				background: -o-radial-gradient(circle closest-side at 20px 20px, #959595, #000); 
+				background: -moz-radial-gradient(circle closest-side at 20px 20px, #959595, #000); 
+				background: radial-gradient(circle closest-side at 20px 20px, #959595, #000);
+			}
+
+			.picture_wrapp > .smile .eye:nth-child(1):after {
+				margin-top: 25px;
+			}
+
+			.picture_wrapp > .smile .eye:nth-child(2):after {
+				margin-top: 39px;
+			}
+
+
+	.picture_wrapp > .smile .mouth {
+		width: 40px;
+		height: 20px;
+		margin-top: 30px;
+		margin-left: 30px;
+		border-radius: 10px;
+		background: #000;
+	}
+
+	.picture_wrapp .dialog  {
+		position: relative;
+		margin-top: -150px;
+		margin-left: 80px;
+
+		width: 100px;
+		padding: 40px 30px 20px;
+
+		background: #ccc;
+		font-size: 1.8em;
+		font-family: Arial, sans-serif;
+		color: #7F7F7F;
+		
+		text-transform: uppercase;
+	}
+
+	.picture_wrapp .dialog:first-letter {
+		font-weight: bold;
+		font-size: 1.9em;
+	}
+
+	.picture_wrapp .dialog:after {
+		content: '';
+		display: block;
+
+		position: absolute;
+		bottom: 0;
+		right: -65px;
+
+		width: 0;
+		height: 0;
+		border-top: 30px solid #B3B3B3; 
+		border-right: 65px solid transparent;	
+	}
